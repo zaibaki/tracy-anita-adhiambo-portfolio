@@ -1,0 +1,195 @@
+{
+  "profile": [
+    {
+      "profile_id": 1,
+      "full_name": "Tracy Anita Adhiambo",
+      "programme": "BSc Applied Biology",
+      "bio": "A motivated and enthusiastic student with a strong academic background and an interest in practical learning. Possesses good communication, teamwork, and organizational skills, and gains valuable professional experience"
+    }
+  ],
+  "skill": [
+    {
+      "skill_id": 1,
+      "profile_id": 1,
+      "skill_name": "Communication skills",
+      "level": "Strong"
+    },
+    {
+      "skill_id": 2,
+      "profile_id": 1,
+      "skill_name": "Teamwork and collaboration",
+      "level": "Strong"
+    },
+    {
+      "skill_id": 3,
+      "profile_id": 1,
+      "skill_name": "Time management",
+      "level": "Strong"
+    },
+    {
+      "skill_id": 4,
+      "profile_id": 1,
+      "skill_name": "Problem-solving",
+      "level": "Strong"
+    },
+    {
+      "skill_id": 5,
+      "profile_id": 1,
+      "skill_name": "Attention to detail",
+      "level": "Strong"
+    },
+    {
+      "skill_id": 6,
+      "profile_id": 1,
+      "skill_name": "Microsoft Word",
+      "level": "Advanced"
+    },
+    {
+      "skill_id": 7,
+      "profile_id": 1,
+      "skill_name": "Microsoft Excel",
+      "level": "Intermediate"
+    },
+    {
+      "skill_id": 8,
+      "profile_id": 1,
+      "skill_name": "PowerPoint",
+      "level": "Advanced"
+    },
+    {
+      "skill_id": 9,
+      "profile_id": 1,
+      "skill_name": "Data entry",
+      "level": "Intermediate"
+    },
+    {
+      "skill_id": 10,
+      "profile_id": 1,
+      "skill_name": "Report writing",
+      "level": "Advanced"
+    }
+  ],
+  "hobby": [
+    {
+      "hobby_id": 1,
+      "profile_id": 1,
+      "hobby_name": "Skating",
+      "description": "Gliding outdoors on skates - balancing, turning and picking up speed. It is fun, it keeps me fit, and it is a good way to clear my head after classes."
+    },
+    {
+      "hobby_id": 2,
+      "profile_id": 1,
+      "hobby_name": "Riding a Bicycle",
+      "description": "Cycling on open roads and around the neighbourhood - fresh air, exercise and a simple way to get around while enjoying the ride."
+    },
+    {
+      "hobby_id": 3,
+      "profile_id": 1,
+      "hobby_name": "Watching Movies",
+      "description": "Settling in with popcorn to watch a film or a series, from crime thrillers to comedies. A relaxing way to unwind and enjoy a good story."
+    }
+  ],
+  "movie": [
+    {
+      "movie_id": 1,
+      "profile_id": 1,
+      "title": "Euphoria",
+      "release_year": 2019,
+      "my_rank": 1,
+      "why_i_love_it": "Zendaya stars as Rue in HBO's raw, emotional drama about youth, identity, addiction and friendship. The storytelling is honest and hard-hitting, and the visuals are striking — a show that stays with you long after each episode ends."
+    },
+    {
+      "movie_id": 2,
+      "profile_id": 1,
+      "title": "A Different World",
+      "release_year": 1987,
+      "my_rank": 2,
+      "why_i_love_it": "Life at Hillman College, a fictional historically Black university — friendships, ambition, love and growing up away from home. As a university student myself, the campus stories, the humour and Whitley and Dwayne's journey feel close to real student life."
+    },
+    {
+      "movie_id": 3,
+      "profile_id": 1,
+      "title": "Nemesis",
+      "release_year": 2021,
+      "my_rank": 3,
+      "why_i_love_it": "An underworld kingpin, John Morgan, returns to London from semi-retirement, and old scores, family feuds and betrayal catch up with him fast. I love the tension, the London setting and the way loyalty and revenge keep colliding."
+    },
+    {
+      "movie_id": 4,
+      "profile_id": 1,
+      "title": "Never Have I Ever",
+      "release_year": 2020,
+      "my_rank": 4,
+      "why_i_love_it": "Devi Vishwakumar, a 15-year-old Indian-American student, tries to reinvent herself at school after losing her father. Funny, honest and relatable — about friendship, family, grief and growing up."
+    },
+    {
+      "movie_id": 5,
+      "profile_id": 1,
+      "title": "Bridgerton",
+      "release_year": 2020,
+      "my_rank": 5,
+      "why_i_love_it": "Regency London, high society, balls, gossip and the Bridgerton family searching for love. The costumes, the music and the drama of each season make it easy to watch one episode after another."
+    }
+  ],
+  "course": [
+    {
+      "course_id": 1,
+      "profile_id": 1,
+      "year_label": "2025",
+      "code": "ICS 2216 · Lab 1",
+      "title": "Professional CV in Microsoft Word",
+      "description": "Professional document formatting, structuring a CV, and presenting skills and education clearly.",
+      "tags": "Microsoft Word, Document Design"
+    },
+    {
+      "course_id": 2,
+      "profile_id": 1,
+      "year_label": "2026",
+      "code": "ICS 2216 · Lab 2",
+      "title": "“All About Me” Portfolio Website",
+      "description": "HTML structure, CSS styling, hyperlinks and navigation, images with alt text, and responsive, accessible design - this site.",
+      "tags": "HTML, CSS, Web Design"
+    },
+    {
+      "course_id": 3,
+      "profile_id": 1,
+      "year_label": "2025 – Present",
+      "code": "Applied Biology",
+      "title": "Laboratory Practical Exercises",
+      "description": "Following procedures accurately, observing carefully, and documenting findings in academic reports.",
+      "tags": "Lab Skills, Report Writing"
+    }
+  ],
+  "enquiry": [],
+  "queries": {
+    "movies_ranked": [
+      {
+        "title": "Euphoria",
+        "release_year": 2019
+      },
+      {
+        "title": "A Different World",
+        "release_year": 1987
+      },
+      {
+        "title": "Nemesis",
+        "release_year": 2021
+      },
+      {
+        "title": "Never Have I Ever",
+        "release_year": 2020
+      },
+      {
+        "title": "Bridgerton",
+        "release_year": 2020
+      }
+    ],
+    "movies_after_2010": [
+      "Euphoria",
+      "Nemesis",
+      "Never Have I Ever",
+      "Bridgerton"
+    ],
+    "skill_count": 10
+  }
+}

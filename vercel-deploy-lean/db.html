@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Database | Tracy Anita Adhiambo</title>
+<style>body{font-family:Arial,sans-serif;max-width:900px;margin:2rem auto;padding:0 1rem;line-height:1.6;color:#222}h1{color:#c81e1e}a{color:#c81e1e}table{border-collapse:collapse;width:100%;margin:1rem 0}th,td{border:1px solid #ddd;padding:.5rem;text-align:left;vertical-align:top}th{background:#c81e1e;color:#fff}pre{background:#f5f5f5;padding:1rem;overflow:auto}.note{background:#fff7ed;border:1px solid #f0c080;padding:1rem;border-radius:8px}</style>
+</head>
+<body>
+<p><a href="/">Back to portfolio</a></p>
+<h1>Portfolio database, live</h1>
+<p>This page reads the real <code>portfolio.db</code> through <code>/api/db</code> on Vercel. Try the API directly: <a href="/api/db?q=movies">/api/db?q=movies</a>, <a href="/api/db?q=queries">/api/db?q=queries</a>, <a href="/api/db?q=profile">/api/db?q=profile</a></p>
+<p class="note"><strong>Note on writes:</strong> Vercel serverless functions run on a read-only, ephemeral filesystem, so an INSERT made live would not persist. Enquiry rows are added to <code>portfolio.db</code> locally and redeployed. The contact form on the site uses email instead.</p>
+<div id="out"><p>Loading from /api/db</p></div>
+<script>
+fetch('/api/db').then(r=>r.json()).then(j=>{
+  const out=document.getElementById('out');
+  if(!j.ok){ out.innerHTML='<p>API error: '+j.error+'</p>'; return; }
+  out.innerHTML='<p>Source: '+j.source+'</p>'
+    +'<h2>Profile</h2><pre>'+JSON.stringify(j.data.profile,null,2)+'</pre>'
+    +'<h2>Movies (ranked)</h2><pre>'+JSON.stringify(j.data.movies,null,2)+'</pre>'
+    +'<h2>Skills ('+j.data.skills.length+')</h2><pre>'+JSON.stringify(j.data.skills,null,2)+'</pre>'
+    +'<h2>Hobbies</h2><pre>'+JSON.stringify(j.data.hobbies,null,2)+'</pre>'
+    +'<h2>Courses</h2><pre>'+JSON.stringify(j.data.courses,null,2)+'</pre>'
+    +'<h2>Lab queries</h2><pre>'+JSON.stringify(j.data.queries,null,2)+'</pre>';
+}).catch(e=>{ document.getElementById('out').innerHTML='<p>Could not load /api/db: '+e+'</p>'; });
+</script>
+</body>
+</html>
