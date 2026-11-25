@@ -6,17 +6,20 @@
 --
 -- Provenance, read this before submitting:
 -- * profile, skills and courses come from Anita's CV / coursework.
--- * hobbies (3) and movies/shows (3) are ANITA'S OWN LISTS, supplied by
---   Richie on 25 Nov 2026: Skating, Riding a Bicycle, Watching Movies;
---   Nemesis, Bridgerton, Never Have I Ever. They match exactly what
---   the portfolio site currently shows.
+-- * hobbies (3) and movies/shows (5) are ANITA'S OWN LISTS, supplied by
+--   Richie on 25 Nov 2026 and confirmed in Anita's own reflection the
+--   same evening: Skating, Riding a Bicycle, Watching Movies;
+--   Euphoria, A Different World, Nemesis, Never Have I Ever, Bridgerton.
+--   They match exactly what the portfolio site currently shows, in her
+--   own order (my_rank 1-5).
 -- * 'Bridgeston' as supplied is spelled Bridgerton on the site and here
 --   (Netflix series, 2020-PRESENT). Nemesis is the 2021 British crime
 --   thriller film - several films share the title, so check with Anita
 --   if she meant a different one.
--- * The movie table holds 1 film (Nemesis, 2021) and 2 TV series:
---   Bridgerton (2020-PRESENT) and Never Have I Ever (2020-2023).
---   movie.release_year stores the START year only (2021 / 2020 / 2020).
+-- * The movie table holds 1 film (Nemesis, 2021) and 4 TV series:
+--   Euphoria (2019-PRESENT), A Different World (1987-1993),
+--   Never Have I Ever (2020-2023) and Bridgerton (2020-PRESENT).
+--   movie.release_year stores the START year only.
 -- * skill levels are training self-assessments, not grades from the CV.
 -- * enquiry is intentionally empty: no real message has been received yet.
 --   Do not invent a fake sender. The contact form will add real rows.
@@ -109,12 +112,14 @@ INSERT INTO hobby (profile_id, hobby_name, description) VALUES
 (1, 'Riding a Bicycle', 'Cycling on open roads and around the neighbourhood - fresh air, exercise and a simple way to get around while enjoying the ride.'),
 (1, 'Watching Movies', 'Settling in with popcorn to watch a film or a series, from crime thrillers to comedies. A relaxing way to unwind and enjoy a good story.');
 
--- Movies / shows: 3, Anita's own list, ranked, matching the site exactly.
+-- Movies / shows: 5, Anita's own Top 5, ranked in her order, matching the site exactly.
 -- Stored in the Lab movie table (release_year = start year, see header).
 INSERT INTO movie (profile_id, title, release_year, my_rank, why_i_love_it) VALUES
-(1, 'Nemesis', 2021, 1, 'An underworld kingpin, John Morgan, returns to London from semi-retirement, and old scores, family feuds and betrayal catch up with him fast. I love the tension, the London setting and the way loyalty and revenge keep colliding.'),
-(1, 'Bridgerton', 2020, 2, 'Regency London, high society, balls, gossip and the Bridgerton family searching for love. The costumes, the music and the drama of each season make it easy to watch one episode after another.'),
-(1, 'Never Have I Ever', 2020, 3, 'Devi Vishwakumar, a 15-year-old Indian-American student, tries to reinvent herself at school after losing her father. Funny, honest and relatable — about friendship, family, grief and growing up.');
+(1, 'Euphoria', 2019, 1, 'Zendaya stars as Rue in HBO''s raw, emotional drama about youth, identity, addiction and friendship. The storytelling is honest and hard-hitting, and the visuals are striking — a show that stays with you long after each episode ends.'),
+(1, 'A Different World', 1987, 2, 'Life at Hillman College, a fictional historically Black university — friendships, ambition, love and growing up away from home. As a university student myself, the campus stories, the humour and Whitley and Dwayne''s journey feel close to real student life.'),
+(1, 'Nemesis', 2021, 3, 'An underworld kingpin, John Morgan, returns to London from semi-retirement, and old scores, family feuds and betrayal catch up with him fast. I love the tension, the London setting and the way loyalty and revenge keep colliding.'),
+(1, 'Never Have I Ever', 2020, 4, 'Devi Vishwakumar, a 15-year-old Indian-American student, tries to reinvent herself at school after losing her father. Funny, honest and relatable — about friendship, family, grief and growing up.'),
+(1, 'Bridgerton', 2020, 5, 'Regency London, high society, balls, gossip and the Bridgerton family searching for love. The costumes, the music and the drama of each season make it easy to watch one episode after another.');
 
 -- Courses: 3, matching the site's Academic Journey cards exactly.
 INSERT INTO course (profile_id, year_label, code, title, description, tags) VALUES

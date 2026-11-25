@@ -93,26 +93,42 @@
     {
       "movie_id": 1,
       "profile_id": 1,
-      "title": "Nemesis",
-      "release_year": 2021,
+      "title": "Euphoria",
+      "release_year": 2019,
       "my_rank": 1,
-      "why_i_love_it": "An underworld kingpin, John Morgan, returns to London from semi-retirement, and old scores, family feuds and betrayal catch up with him fast. I love the tension, the London setting and the way loyalty and revenge keep colliding."
+      "why_i_love_it": "Zendaya stars as Rue in HBO's raw, emotional drama about youth, identity, addiction and friendship. The storytelling is honest and hard-hitting, and the visuals are striking — a show that stays with you long after each episode ends."
     },
     {
       "movie_id": 2,
       "profile_id": 1,
-      "title": "Bridgerton",
-      "release_year": 2020,
+      "title": "A Different World",
+      "release_year": 1987,
       "my_rank": 2,
-      "why_i_love_it": "Regency London, high society, balls, gossip and the Bridgerton family searching for love. The costumes, the music and the drama of each season make it easy to watch one episode after another."
+      "why_i_love_it": "Life at Hillman College, a fictional historically Black university — friendships, ambition, love and growing up away from home. As a university student myself, the campus stories, the humour and Whitley and Dwayne's journey feel close to real student life."
     },
     {
       "movie_id": 3,
       "profile_id": 1,
+      "title": "Nemesis",
+      "release_year": 2021,
+      "my_rank": 3,
+      "why_i_love_it": "An underworld kingpin, John Morgan, returns to London from semi-retirement, and old scores, family feuds and betrayal catch up with him fast. I love the tension, the London setting and the way loyalty and revenge keep colliding."
+    },
+    {
+      "movie_id": 4,
+      "profile_id": 1,
       "title": "Never Have I Ever",
       "release_year": 2020,
-      "my_rank": 3,
+      "my_rank": 4,
       "why_i_love_it": "Devi Vishwakumar, a 15-year-old Indian-American student, tries to reinvent herself at school after losing her father. Funny, honest and relatable — about friendship, family, grief and growing up."
+    },
+    {
+      "movie_id": 5,
+      "profile_id": 1,
+      "title": "Bridgerton",
+      "release_year": 2020,
+      "my_rank": 5,
+      "why_i_love_it": "Regency London, high society, balls, gossip and the Bridgerton family searching for love. The costumes, the music and the drama of each season make it easy to watch one episode after another."
     }
   ],
   "course": [
@@ -148,22 +164,31 @@
   "queries": {
     "movies_ranked": [
       {
+        "title": "Euphoria",
+        "release_year": 2019
+      },
+      {
+        "title": "A Different World",
+        "release_year": 1987
+      },
+      {
         "title": "Nemesis",
         "release_year": 2021
       },
       {
-        "title": "Bridgerton",
+        "title": "Never Have I Ever",
         "release_year": 2020
       },
       {
-        "title": "Never Have I Ever",
+        "title": "Bridgerton",
         "release_year": 2020
       }
     ],
     "movies_after_2010": [
+      "Euphoria",
       "Nemesis",
-      "Bridgerton",
-      "Never Have I Ever"
+      "Never Have I Ever",
+      "Bridgerton"
     ],
     "skill_count": 10
   }
