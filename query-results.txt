@@ -1,0 +1,49 @@
+ICS 2216 Lab 2, Part B - SQL query results
+Database: portfolio.db (Tracy Anita Adhiambo)
+Run: 25 Nov 2026 - updated to the two-show list
+
+1. Show my full profile
+SELECT * FROM profile;
+profile_id  full_name             programme            bio                                                                                                                                                                                                                        
+----------  --------------------  -------------------  ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1           Tracy Anita Adhiambo  BSc Applied Biology  A motivated and enthusiastic student with a strong academic background and an interest in practical learning. Possesses good communication, teamwork, and organizational skills, and gains valuable professional experience
+
+2. My movies in rank order (sorting)
+SELECT title, release_year FROM movie ORDER BY my_rank;
+title              release_year
+-----------------  ------------
+A Different World  1987        
+Euphoria           2019        
+
+3. Only movies released after 2010 (filtering)
+SELECT title FROM movie WHERE release_year > 2010;
+title   
+--------
+Euphoria
+
+4. Combine tables: my name with each of my hobbies (relationship)
+SELECT profile.full_name, hobby.hobby_name FROM profile JOIN hobby ON hobby.profile_id = profile.profile_id;
+full_name             hobby_name                      
+--------------------  --------------------------------
+Tracy Anita Adhiambo  Nature Walks & Field Observation
+Tracy Anita Adhiambo  Listening to Music              
+Tracy Anita Adhiambo  Photography                     
+Tracy Anita Adhiambo  Reading Science & Biology Books 
+Tracy Anita Adhiambo  Team Activities & Group Study   
+Tracy Anita Adhiambo  Gardening & Plant Care          
+
+5. How many skills do I list?
+SELECT COUNT(*) FROM skill;
+skill_count
+-----------
+10         
+
+Extra check - courses (site section, extra table)
+SELECT year_label, code, title FROM course;
+year_label      code              title                            
+--------------  ----------------  ---------------------------------
+2025            ICS 2216 · Lab 1  Professional CV in Microsoft Word
+2026            ICS 2216 · Lab 2  “All About Me” Portfolio Website 
+2025 – Present  Applied Biology   Laboratory Practical Exercises   
+
+Note: movie table now holds 2 TV shows only - A Different World (1987, rank 1) and Euphoria (2019, rank 2). release_year is the start year; Euphoria is 2019-PRESENT on the site.

@@ -1,0 +1,176 @@
+{
+  "profile": [
+    {
+      "profile_id": 1,
+      "full_name": "Tracy Anita Adhiambo",
+      "programme": "BSc Applied Biology",
+      "bio": "A motivated and enthusiastic student with a strong academic background and an interest in practical learning. Possesses good communication, teamwork, and organizational skills, and gains valuable professional experience"
+    }
+  ],
+  "skill": [
+    {
+      "skill_id": 1,
+      "profile_id": 1,
+      "skill_name": "Communication skills",
+      "level": "Strong"
+    },
+    {
+      "skill_id": 2,
+      "profile_id": 1,
+      "skill_name": "Teamwork and collaboration",
+      "level": "Strong"
+    },
+    {
+      "skill_id": 3,
+      "profile_id": 1,
+      "skill_name": "Time management",
+      "level": "Strong"
+    },
+    {
+      "skill_id": 4,
+      "profile_id": 1,
+      "skill_name": "Problem-solving",
+      "level": "Strong"
+    },
+    {
+      "skill_id": 5,
+      "profile_id": 1,
+      "skill_name": "Attention to detail",
+      "level": "Strong"
+    },
+    {
+      "skill_id": 6,
+      "profile_id": 1,
+      "skill_name": "Microsoft Word",
+      "level": "Advanced"
+    },
+    {
+      "skill_id": 7,
+      "profile_id": 1,
+      "skill_name": "Microsoft Excel",
+      "level": "Intermediate"
+    },
+    {
+      "skill_id": 8,
+      "profile_id": 1,
+      "skill_name": "PowerPoint",
+      "level": "Advanced"
+    },
+    {
+      "skill_id": 9,
+      "profile_id": 1,
+      "skill_name": "Data entry",
+      "level": "Intermediate"
+    },
+    {
+      "skill_id": 10,
+      "profile_id": 1,
+      "skill_name": "Report writing",
+      "level": "Advanced"
+    }
+  ],
+  "hobby": [
+    {
+      "hobby_id": 1,
+      "profile_id": 1,
+      "hobby_name": "Nature Walks & Field Observation",
+      "description": "Walking outdoors and observing plants, insects and birds in their natural environment - the hobby that made Applied Biology feel like the right course for me."
+    },
+    {
+      "hobby_id": 2,
+      "profile_id": 1,
+      "hobby_name": "Listening to Music",
+      "description": "Music keeps me focused during study sessions and relaxed after long laboratory days. It is the soundtrack to most of my revision."
+    },
+    {
+      "hobby_id": 3,
+      "profile_id": 1,
+      "hobby_name": "Photography",
+      "description": "Taking photos of people, places and nature - including the two portraits on this website. I enjoy capturing colour and light on an ordinary day."
+    },
+    {
+      "hobby_id": 4,
+      "profile_id": 1,
+      "hobby_name": "Reading Science & Biology Books",
+      "description": "Reading beyond the coursework - books and articles about the human body, plants and the environment that deepen what we cover in class."
+    },
+    {
+      "hobby_id": 5,
+      "profile_id": 1,
+      "hobby_name": "Team Activities & Group Study",
+      "description": "Working with classmates on group assignments and practicals. Teamwork is one of my core skills, and group study makes difficult topics easier."
+    },
+    {
+      "hobby_id": 6,
+      "profile_id": 1,
+      "hobby_name": "Gardening & Plant Care",
+      "description": "Looking after plants at home and watching them grow - a small, everyday way of practising the observation skills I use in biology practicals."
+    }
+  ],
+  "movie": [
+    {
+      "movie_id": 1,
+      "profile_id": 1,
+      "title": "A Different World",
+      "release_year": 1987,
+      "my_rank": 1,
+      "why_i_love_it": "Life at Hillman College, a fictional historically Black university \u2014 friendships, ambition, love and growing up away from home. As a university student myself, the campus stories, the humour and Whitley and Dwayne's journey feel close to real student life."
+    },
+    {
+      "movie_id": 2,
+      "profile_id": 1,
+      "title": "Euphoria",
+      "release_year": 2019,
+      "my_rank": 2,
+      "why_i_love_it": "Zendaya stars as Rue in HBO's raw, emotional drama about youth, identity, addiction and friendship. The storytelling is honest and hard-hitting, and the visuals are striking \u2014 a show that stays with you long after each episode ends."
+    }
+  ],
+  "course": [
+    {
+      "course_id": 1,
+      "profile_id": 1,
+      "year_label": "2025",
+      "code": "ICS 2216 \u00b7 Lab 1",
+      "title": "Professional CV in Microsoft Word",
+      "description": "Professional document formatting, structuring a CV, and presenting skills and education clearly.",
+      "tags": "Microsoft Word, Document Design"
+    },
+    {
+      "course_id": 2,
+      "profile_id": 1,
+      "year_label": "2026",
+      "code": "ICS 2216 \u00b7 Lab 2",
+      "title": "\u201cAll About Me\u201d Portfolio Website",
+      "description": "HTML structure, CSS styling, hyperlinks and navigation, images with alt text, and responsive, accessible design - this site.",
+      "tags": "HTML, CSS, Web Design"
+    },
+    {
+      "course_id": 3,
+      "profile_id": 1,
+      "year_label": "2025 \u2013 Present",
+      "code": "Applied Biology",
+      "title": "Laboratory Practical Exercises",
+      "description": "Following procedures accurately, observing carefully, and documenting findings in academic reports.",
+      "tags": "Lab Skills, Report Writing"
+    }
+  ],
+  "enquiry": [],
+  "queries": {
+    "movies_ranked": [
+      {
+        "title": "A Different World",
+        "release_year": 1987
+      },
+      {
+        "title": "Euphoria",
+        "release_year": 2019
+      }
+    ],
+    "movies_after_2010": [
+      {
+        "title": "Euphoria"
+      }
+    ],
+    "skill_count": 10
+  }
+}
