@@ -6,14 +6,17 @@
 --
 -- Provenance, read this before submitting:
 -- * profile, skills and courses come from Anita's CV / coursework.
--- * hobbies (6) and shows (2) are TRAINING PLACEHOLDERS, filled in at
---   Richie's instruction because Anita's real lists were not supplied.
---   They match exactly what the portfolio site currently shows.
---   Swap those two tables for her real lists before submission.
--- * The two shows are TV series, not films: A Different World
---   (1987-1993, SITCOM / DRAMA) and Euphoria (2019-PRESENT, DRAMA).
---   movie.release_year stores the START year only (1987 / 2019).
---   Do not invent an end year for Euphoria.
+-- * hobbies (3) and movies/shows (3) are ANITA'S OWN LISTS, supplied by
+--   Richie on 25 Nov 2026: Skating, Riding a Bicycle, Watching Movies;
+--   Nemesis, Bridgerton, Never Have I Ever. They match exactly what
+--   the portfolio site currently shows.
+-- * 'Bridgeston' as supplied is spelled Bridgerton on the site and here
+--   (Netflix series, 2020-PRESENT). Nemesis is the 2021 British crime
+--   thriller film - several films share the title, so check with Anita
+--   if she meant a different one.
+-- * The movie table holds 1 film (Nemesis, 2021) and 2 TV series:
+--   Bridgerton (2020-PRESENT) and Never Have I Ever (2020-2023).
+--   movie.release_year stores the START year only (2021 / 2020 / 2020).
 -- * skill levels are training self-assessments, not grades from the CV.
 -- * enquiry is intentionally empty: no real message has been received yet.
 --   Do not invent a fake sender. The contact form will add real rows.
@@ -100,20 +103,18 @@ INSERT INTO skill (profile_id, skill_name, level) VALUES
 (1, 'Data entry', 'Intermediate'),
 (1, 'Report writing', 'Advanced');
 
--- Hobbies: 6, matching the site exactly. TRAINING PLACEHOLDERS - see header.
+-- Hobbies: 3, Anita's own list, matching the site exactly.
 INSERT INTO hobby (profile_id, hobby_name, description) VALUES
-(1, 'Nature Walks & Field Observation', 'Walking outdoors and observing plants, insects and birds in their natural environment - the hobby that made Applied Biology feel like the right course for me.'),
-(1, 'Listening to Music', 'Music keeps me focused during study sessions and relaxed after long laboratory days. It is the soundtrack to most of my revision.'),
-(1, 'Photography', 'Taking photos of people, places and nature - including the two portraits on this website. I enjoy capturing colour and light on an ordinary day.'),
-(1, 'Reading Science & Biology Books', 'Reading beyond the coursework - books and articles about the human body, plants and the environment that deepen what we cover in class.'),
-(1, 'Team Activities & Group Study', 'Working with classmates on group assignments and practicals. Teamwork is one of my core skills, and group study makes difficult topics easier.'),
-(1, 'Gardening & Plant Care', 'Looking after plants at home and watching them grow - a small, everyday way of practising the observation skills I use in biology practicals.');
+(1, 'Skating', 'Gliding outdoors on skates - balancing, turning and picking up speed. It is fun, it keeps me fit, and it is a good way to clear my head after classes.'),
+(1, 'Riding a Bicycle', 'Cycling on open roads and around the neighbourhood - fresh air, exercise and a simple way to get around while enjoying the ride.'),
+(1, 'Watching Movies', 'Settling in with popcorn to watch a film or a series, from crime thrillers to comedies. A relaxing way to unwind and enjoy a good story.');
 
--- Shows: 2, ranked, matching the site exactly. TRAINING PLACEHOLDERS - see header.
+-- Movies / shows: 3, Anita's own list, ranked, matching the site exactly.
 -- Stored in the Lab movie table (release_year = start year, see header).
 INSERT INTO movie (profile_id, title, release_year, my_rank, why_i_love_it) VALUES
-(1, 'A Different World', 1987, 1, 'Life at Hillman College, a fictional historically Black university — friendships, ambition, love and growing up away from home. As a university student myself, the campus stories, the humour and Whitley and Dwayne''s journey feel close to real student life.'),
-(1, 'Euphoria', 2019, 2, 'Zendaya stars as Rue in HBO''s raw, emotional drama about youth, identity, addiction and friendship. The storytelling is honest and hard-hitting, and the visuals are striking — a show that stays with you long after each episode ends.');
+(1, 'Nemesis', 2021, 1, 'An underworld kingpin, John Morgan, returns to London from semi-retirement, and old scores, family feuds and betrayal catch up with him fast. I love the tension, the London setting and the way loyalty and revenge keep colliding.'),
+(1, 'Bridgerton', 2020, 2, 'Regency London, high society, balls, gossip and the Bridgerton family searching for love. The costumes, the music and the drama of each season make it easy to watch one episode after another.'),
+(1, 'Never Have I Ever', 2020, 3, 'Devi Vishwakumar, a 15-year-old Indian-American student, tries to reinvent herself at school after losing her father. Funny, honest and relatable — about friendship, family, grief and growing up.');
 
 -- Courses: 3, matching the site's Academic Journey cards exactly.
 INSERT INTO course (profile_id, year_label, code, title, description, tags) VALUES
