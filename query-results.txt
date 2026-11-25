@@ -1,6 +1,6 @@
 ICS 2216 Lab 2, Part B - SQL query results
 Database: portfolio.db (Tracy Anita Adhiambo)
-Run: 25 Nov 2026 - updated to Anita's own Top 5 movies/shows and 3 hobbies
+Run: 25 Nov 2026 - updated to Anita's own Top 5 movies/shows and 3 hobbies; synopses rewritten in her voice
 
 1. Show my full profile
 SELECT * FROM profile;
@@ -27,7 +27,7 @@ Nemesis
 Never Have I Ever
 Bridgerton       
 
-4. Combine tables: my name with each of my hobbies (relationship)
+4. My profile joined with my hobbies
 SELECT profile.full_name, hobby.hobby_name FROM profile JOIN hobby ON hobby.profile_id = profile.profile_id;
 full_name             hobby_name      
 --------------------  ----------------
@@ -35,18 +35,8 @@ Tracy Anita Adhiambo  Skating
 Tracy Anita Adhiambo  Riding a Bicycle
 Tracy Anita Adhiambo  Watching Movies 
 
-5. How many skills do I list?
-SELECT COUNT(*) FROM skill;
-COUNT(*)
---------
-10      
-
-Extra check - courses (site section, extra table)
-SELECT year_label, code, title FROM course;
-year_label      code              title                            
---------------  ----------------  ---------------------------------
-2025            ICS 2216 · Lab 1  Professional CV in Microsoft Word
-2026            ICS 2216 · Lab 2  “All About Me” Portfolio Website 
-2025 – Present  Applied Biology   Laboratory Practical Exercises   
-
-Note: movie table now holds Anita's Top 5 in her order - Euphoria (2019, rank 1), A Different World (1987, rank 2), Nemesis (2021, rank 3), Never Have I Ever (2020, rank 4), Bridgerton (2020, rank 5). release_year is the start year.
+5. How many skills do I have? (counting)
+SELECT COUNT(*) AS skill_count FROM skill;
+skill_count
+-----------
+10         

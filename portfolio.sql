@@ -11,11 +11,11 @@
 --   same evening: Skating, Riding a Bicycle, Watching Movies;
 --   Euphoria, A Different World, Nemesis, Never Have I Ever, Bridgerton.
 --   They match exactly what the portfolio site currently shows, in her
---   own order (my_rank 1-5).
+--   own order (my_rank 1-5). The why_i_love_it lines were rewritten
+--   25 Nov 2026 in Anita's own voice (first person), at Richie's request.
 -- * 'Bridgeston' as supplied is spelled Bridgerton on the site and here
---   (Netflix series, 2020-PRESENT). Nemesis is the 2021 British crime
---   thriller film - several films share the title, so check with Anita
---   if she meant a different one.
+--   (Netflix series, 2020-PRESENT). Nemesis CONFIRMED 25 Nov 2026
+--   (Richie) as the 2021 British crime thriller film.
 -- * The movie table holds 1 film (Nemesis, 2021) and 4 TV series:
 --   Euphoria (2019-PRESENT), A Different World (1987-1993),
 --   Never Have I Ever (2020-2023) and Bridgerton (2020-PRESENT).
@@ -115,11 +115,11 @@ INSERT INTO hobby (profile_id, hobby_name, description) VALUES
 -- Movies / shows: 5, Anita's own Top 5, ranked in her order, matching the site exactly.
 -- Stored in the Lab movie table (release_year = start year, see header).
 INSERT INTO movie (profile_id, title, release_year, my_rank, why_i_love_it) VALUES
-(1, 'Euphoria', 2019, 1, 'Zendaya stars as Rue in HBO''s raw, emotional drama about youth, identity, addiction and friendship. The storytelling is honest and hard-hitting, and the visuals are striking — a show that stays with you long after each episode ends.'),
-(1, 'A Different World', 1987, 2, 'Life at Hillman College, a fictional historically Black university — friendships, ambition, love and growing up away from home. As a university student myself, the campus stories, the humour and Whitley and Dwayne''s journey feel close to real student life.'),
-(1, 'Nemesis', 2021, 3, 'An underworld kingpin, John Morgan, returns to London from semi-retirement, and old scores, family feuds and betrayal catch up with him fast. I love the tension, the London setting and the way loyalty and revenge keep colliding.'),
-(1, 'Never Have I Ever', 2020, 4, 'Devi Vishwakumar, a 15-year-old Indian-American student, tries to reinvent herself at school after losing her father. Funny, honest and relatable — about friendship, family, grief and growing up.'),
-(1, 'Bridgerton', 2020, 5, 'Regency London, high society, balls, gossip and the Bridgerton family searching for love. The costumes, the music and the drama of each season make it easy to watch one episode after another.');
+(1, 'Euphoria', 2019, 1, 'I love Euphoria because it tells the truth about being young, about friendship, mistakes and trying to find yourself. The characters feel real, and the way it is filmed makes every episode stay with me long after it ends.'),
+(1, 'A Different World', 1987, 2, 'As a university student myself, I love watching life at Hillman College, the friendships, the laughter and the lessons about growing up away from home. Whitley and Dwayne''s story is my favourite part, it feels close to real student life.'),
+(1, 'Nemesis', 2021, 3, 'Nemesis keeps me guessing from the start, with old scores, family feuds and betrayal catching up fast. I enjoy crime stories where you have to think along, and the tension and the London setting make me want to watch it again.'),
+(1, 'Never Have I Ever', 2020, 4, 'Never Have I Ever makes me laugh and feel at the same time. Devi is funny, stubborn and trying her best, and the show reminds me that growing up is messy for everyone.'),
+(1, 'Bridgerton', 2020, 5, 'Bridgerton is pure enjoyment, the dresses, the music, the balls and the romance of Regency London. It is the show I watch when I want to relax and escape into a beautiful world.');
 
 -- Courses: 3, matching the site's Academic Journey cards exactly.
 INSERT INTO course (profile_id, year_label, code, title, description, tags) VALUES
